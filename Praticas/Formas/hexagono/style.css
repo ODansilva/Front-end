@@ -1,0 +1,80 @@
+.container {
+    position: relative;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    background-color: antiquewhite;
+}
+.centro {
+    position: absolute;
+    top: 45%;
+}
+.hexagono {
+    position: relative;
+    width: 100px;
+    height: 50px;
+    background: #ff9f12;
+    filter: drop-shadow(0 5px 0 #ccc);
+}
+.hexagono:hover {
+    position: relative;
+    top: -10px;
+    filter: drop-shadow(0 20px 0 #ccc);
+}
+
+.hexagono::before {
+    position: absolute;
+    top: -35px;
+    left: 0;
+    width: 0;
+    height: 0;
+    content: "";
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 35px solid #ff9f12;
+}
+
+.hexagono::after {
+    position: absolute;
+    bottom: -35px;
+    left: 0;
+    width: 0;
+    height: 0;
+    content: "";
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 35px solid #ff9f12;
+}
+
+.lozango {
+    position: relative;
+    width: 0;
+    height: 0;
+    z-index: 1;
+}
+.lozango:hover {
+    position: relative;
+    top: -10px;
+}
+.lozango::before {
+    position: absolute;
+    top: -35px;
+    left: 0;
+    width: 0;
+    height: 0;
+    content: "";
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 35px solid #0077ff;
+}
+.lozango::after {
+    position: absolute;
+    bottom: -35px;
+    left: 0;
+    width: 0;
+    height: 0;
+    content: "";
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 35px solid #0077ff;
+}

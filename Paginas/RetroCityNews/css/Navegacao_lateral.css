@@ -1,0 +1,7 @@
+.navcity2 a:hover{ 
+    text-decoration: none;
+    color: #ff9f12;
+    background: url(../img/gold-arrow.png) no-repeat left center;
+    background-size: 16px;
+    padding-left: 18px;
+}

@@ -1,0 +1,16 @@
+h2 {
+    font-size: 1em;
+    font-weight: bold;
+  }
+h3 {
+    font-size: 0.9em;
+    font-weight: bold;
+  }
+p{
+    color: rgb(0, 151, 221);
+    font-size: 12px;
+  }
+.noticias p{
+    color: rgb(0, 151, 221);
+    font-size: 10px;
+  }

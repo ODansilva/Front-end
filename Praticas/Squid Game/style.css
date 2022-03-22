@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', helvetica, sans-serif;
+    font-size: 25px;
+}
+body {
+    background: #000;
+}
+.s_anime {
+    background-size: 200px;
+    animation-duration: 5s;
+    --webkit-animation-duration: 5s;
+    animation-iteration-count: infinite;
+    --webkit-animation-iteration-count: infinite;
+}
+.f_anima{
+    animation-duration: 3s;
+    --webkit-animation-duration: 3s;
+    animation-iteration-count: infinite;
+    --webkit-animation-iteration-count: infinite;
+}
+
+.g_anima{
+    transition: 2s;
+    background-size: 100px;
+    animation-duration: 6s;
+    --webkit-animation-duration: 6s;
+    animation-iteration-count: infinite;
+    --webkit-animation-iteration-count: infinite;
+}
+audio {
+    border-radius: 15px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+}
+
+#formas {
+    position: absolute;
+    top: 40%;
+    display: block;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+}
+
+
+#circle {
+    width: 200px;
+    height: 200px;
+    background: url(./img/circle.svg) no-repeat center;
+    position: absolute;
+    filter: drop-shadow(0 0 30px #fff);
+    animation-name: circle;
+}
+#circle::after {
+    content: url(./img/circle.svg);
+    position: absolute;
+    top: 50px;
+    left: 0;
+    transform: scaleY(-1);
+    transform-origin: bottom;
+    transform: rotateX(-120deg);
+    opacity: 0.1;
+    animation-name: circle;
+}
+
+#triangle {
+    width: 200px;
+    height: 200px;
+    background: url(./img/triangle.svg) no-repeat center;
+    position: absolute;
+    filter: drop-shadow(0 0 30px #fff);
+    animation-name: triangle;
+
+}
+#triangle::after {
+    content: url(./img/triangle.svg);
+    position: absolute;
+    top: 50px;
+    left: 0;
+    transform: scaleY(-1);
+    transform-origin: bottom;
+    transform: rotateX(-120deg);
+    opacity: 0.1;
+    animation-name: circle;
+}
+
+#rectangle {
+    width: 200px;
+    height: 200px;
+    background: url(./img/rectangle.svg) no-repeat center;
+    position: absolute;
+    filter: drop-shadow(0 0 30px #fff);
+    animation-name: quadrad;
+}
+#rectangle::after {
+    content: url(./img/rectangle.svg);
+    position: absolute;
+    top: 50px;
+    left: 0;
+    transform: scaleY(-1);
+    transform-origin: bottom;
+    transform: rotateX(-120deg);
+    opacity: 0.1;
+    animation-name: circle;
+}
+
+@keyframes circle {
+    0%{
+        opacity: 0;
+    }
+    3%{
+        opacity: 1;
+    }
+    5%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 0;
+    }
+    15%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
+    }
+    35%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 0;
+    }
+    45%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    55%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 1;
+    }
+    65%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 0;
+    }
+    85%{
+        opacity: 0;
+    }
+    90%{
+        opacity: 1;
+    }
+    95%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes triangle {
+    0%{
+        opacity: 0;
+    }
+    5%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    15%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 0;
+    }
+    35%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 1;
+    }
+    45%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    55%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 0;
+    }
+    65%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 1;
+    }
+    75%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 0;
+    }
+    85%{
+        opacity: 0;
+    }
+    90%{
+        opacity: 0;
+    }
+    95%{
+        opacity: 0;
+    }
+    98%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes quadrad {
+    0%{
+        opacity: 0;
+    }
+    5%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 0;
+    }
+    15%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 1;
+    }
+    25%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 0;
+    }
+    35%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 0;
+    }
+    45%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    55%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 0;
+    }
+    65%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 1;
+    }
+    85%{
+        opacity: 0;
+    }
+    90%{
+        opacity: 0;
+    }
+    95%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}

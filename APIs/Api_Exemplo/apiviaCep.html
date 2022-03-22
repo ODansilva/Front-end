@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo APIs - ViaCep</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <div class="container">
+        <form class="grid">
+
+            <div class="gridItem">
+                <label for="cep">Cep<br>
+                <input onblur="buscaCep(this.value)" id="cep" type="text" placeholder="Informe o Cep"><br>
+                </label>
+                
+                <label for="logradouro">Rua<br>
+                <input id="logradouro" type="text" readonly><br>
+                </label>
+
+                <label for="bairro">Bairro<br>
+                <input id="bairro" type="text" readonly><br>
+                </label>
+            </div>
+            
+            <div class="gridItem">
+                <label for="complemento">Complemento<br>
+                <input id="complemento" type="text" readonly><br>
+                </label>
+
+                <label for="localidade">Localidade<br>
+                <input id="localidade" type="text"readonly><br>
+                </label>
+
+                <label for="uf">UF<br>
+                <input id="uf" type="text" readonly><br>
+                </label>
+            </div>
+
+            <div class="gridItem">
+                <label for="ddd">DDD<br>
+                <input id="ddd" type="text" readonly><br>
+                </label>
+
+                <label for="ibge">GeoCode<br>
+                <input id="ibge" type="text" readonly><br>
+                </label>
+
+                <label for="siafi">Siafi<br>
+                <input id="siafi" type="text" readonly><br>
+                </label>
+            </div>
+
+            <div class="fonte">
+                <span> Fonte: <a href="http://viacep.com.br/"> http://viacep.com.br/</a> API Busca CEP</span>
+            </div>
+
+        </form>
+    </div>
+    
+
+
+    <script src="inde.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+body {
+    font-family: "Trebuchet MS", Helvetica, monospace;
+    font-size: 15px;
+}
+.fundo {
+    background: url(../img/fundo.png) repeat-x top left;
+}
+
+.logo {
+    top: 40px;
+    right: 10px;
+}
+.roxo{
+    color: #fff;
+    background: #6109bd;
+}
+.goldo{
+    display: inline-block;
+    color: #fff;
+    background: #ff9f12
+}

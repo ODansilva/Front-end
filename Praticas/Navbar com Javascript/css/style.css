@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin:0;
+    font: 15px "Lato", Arial, sans-serif;
+}
+
+body{
+    min-width: 500px;
+}
+
+header{
+    padding: 30px;
+    display: flex;
+    align-items: center;
+}
+.topo{
+    width: 920px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    margin: 0 auto;
+    border-radius: 15px;
+    background: #ff9f12;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+nav ul li a:hover{
+    color: red;
+}
+
+.navicon {
+    border: 2px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.line {
+    display: block;
+    width: 30px;
+    height: 4px;
+    margin: 10px;
+    background-color: red;
+}
+
+@media screen and (min-width: 575.98px) {
+    .navicon {
+        display: none;
+    }
+
+    .navlink {
+        display: block;
+    }
+
+    .navlink a {
+        display: block;
+        padding: 20px 0;
+    }
+}
+@media screen and (max-width: 575.98px) {
+    .navlink {
+        position: fixed;
+        top: 100px;
+        left: 50px;
+        padding: 20px;
+        border-radius: 5px;
+    }
+    .navlink ul{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .hide {
+        display: none;
+    }
+
+    .resizetopo{
+        -moz-transition-duration: 400ms;
+        -webkit-transition-duration: 400;
+        transition-duration: 400ms;
+
+        -webkit-transition-property: padding-bottom;
+        -moz-transition-property: padding-bottom;
+        transition-property: padding-bottom;
+        padding-bottom: 150px;
+    }
+    
+}
+
+

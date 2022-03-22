@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    overflow: hidden;
+    background: #000;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container .bloco {
+    position: relative;
+    width: 4vw;
+    height: 4vw;
+    background: url(../img/tw3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    border: 1px solid white;
+}

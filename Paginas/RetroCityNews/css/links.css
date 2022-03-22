@@ -1,0 +1,30 @@
+ul {
+    list-style: none;
+}
+a{ 
+    color: #6109bd;
+}
+a:hover{ 
+    text-decoration: none;
+    color: #ff9f12;
+}
+
+.navbar-dark .navbar-toggler {
+    border: 2px solid #ff9f12;
+    outline: none;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #6109bd;
+    background: url(../img/divisor.png) no-repeat left center;
+}
+.navbar-dark .navbar-nav .fist {
+    background: none;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #fff;
+    background: #6109bd;
+}
+.navbar-dark .navbar-nav .nav-link.act {
+    color: #fff;
+    background: #6109bd;
+}

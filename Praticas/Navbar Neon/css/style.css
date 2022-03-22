@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin:0;
+    font: 20px "Lato", Arial, sans-serif;
+}
+:root{
+    --bg:#000;
+    --bl:#10B7F0;
+    --pl:#6610f2;
+    --ol:#ff9f12;
+    --cp:#F02626;
+}
+body{
+    min-width: 400px;
+    background-color: #fff;
+}
+
+header {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+}
+#topo {
+    position: relative;
+    width: 920px;
+    height: 85px;
+    padding: 0 40px;
+    margin: 0 auto;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--bg);
+}
+#logo {
+    filter: saturate(3) drop-shadow(0 0 20px var(--cp));
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+ul li a {
+    position: relative;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+ul li a::before {
+    content: attr(data-text);
+    position: absolute;
+    color: var(--cp);
+    width: 0%;
+    overflow: hidden;
+    transition: 1s;
+    border-right: 5px solid var(--cp);
+    -webkit-text-stroke: 1px var(--cp);
+}
+ul li a:hover::before {
+    width: 100%;
+    filter: saturate(3) drop-shadow(0 0 10px var(--cp));
+}
+
+#menu, .menu {
+    display: none;
+}
+.navicon {
+    border-radius: 5px;
+    border: 1px solid var(--cp);
+    filter: drop-shadow(0 0 20px var(--cp));
+}
+.line {
+    display: block;
+    width: 30px;
+    height: 4px;
+    margin: 10px;
+    background-color: var(--cp);  
+}
+
+@media (max-width: 800px) {
+    nav {
+        display: none;
+        width: auto;
+        position: fixed;
+        top: 100px;
+        right: 30px;
+        padding: 15px;
+        border-radius:  0 0 15px 15px;
+        background: var(--bg);
+    }
+    .menu {
+        display: block;
+    }
+    
+    #menu:checked ~ nav {
+        display: block;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+}

@@ -1,0 +1,174 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font: 19px "Lato", sans-serif;
+}
+
+a:link, a:visited, a:active{
+	text-decoration: none;
+	color: #fff;
+}
+a:hover{
+	color: #fff;
+}
+header {
+	width: 100%;
+	min-height: 700px;
+	padding-top: 40px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background: #fff url(../img/hotel.jpg) no-repeat top center;
+	background-size: cover;
+}
+#topo{
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 800px;
+	padding: 0 25px;
+	height: 50px;
+	background: #FF5733;
+}
+/* Logo
+----------------------*/
+#logo i {
+	width: 500px;
+
+}
+#logo h1 a{
+	font-size: 1.2em;
+	text-decoration: none;
+	color: #fff;
+}
+/* Navegação
+----------------------*/
+nav ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 20px;
+	list-style: none;
+}
+
+nav a{
+	font-size: 0.7em;
+	padding: 5px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+nav ul li a:hover{
+	color: #026D8D;
+}
+/* Conteudos
+----------------------*/
+#mensagem{
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	background: #FFD1C7;
+}
+#mensagem p{
+	padding: 50px 50px;
+	font-size: 0.8em;
+}
+
+#conteudos{
+	margin: 0 auto;
+	padding-bottom: 15px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.postagens{
+	width: 350px;
+	text-align: center;
+	margin: 15px;
+	padding-bottom: 5px;
+	border-radius: 5px;
+	background: #FF785C;
+}
+
+.postagens h3{
+	color: #026D8D;
+	line-height: 40px;
+}
+.postagens p{
+	color: #fff;
+}
+.postagens img{
+	width: 100%;
+}
+
+
+footer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+	padding: 20px;
+	background-color: #FF5733;
+}
+
+
+
+/*Medias Queries*/
+#menu, .menu {
+	display: none; 
+}
+@media (max-width: 575.98px) {
+	.postagens{
+		width: 500px;
+	}
+	nav {
+		display: none;
+		position: absolute;
+		top: 50px;
+		right: 0px;
+	}
+	.menu {
+		flex-direction: column;
+		display: block;
+		color: #fff;
+		padding: 8px;
+		border-radius: 8px;
+		border: 2px solid #fff;
+	}
+	#menu:checked ~ nav{
+		display: block;
+	}
+	nav ul {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 10px 5px;
+		border-radius: 0 0 10px 10px;
+		gap: 5px;
+		background: #FF5733;
+	}	
+
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+	.postagens{
+		width: 450px;
+	}
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.postagens{
+		width: 400px;
+	}
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	.postagens{
+		width: 350px;
+	}
+	#menu, .menu {
+		display: none; 
+	}
+}
+
+

@@ -1,0 +1,26 @@
+function listagem(){
+    container = document.createElement('div')
+    container.setAttribute('class', 'container')
+    document.body.appendChild(container)
+    for(const campo in climas){
+        d = document.createElement('div')
+        d.setAttribute('id', campo)
+        container.appendChild(d)
+        if(document.querySelector('#' + campo)){
+            for (const x in climas[campo]){
+                a = document.createElement('span')
+                a.setAttribute('class', x)
+                d.appendChild(a)
+                if(document.querySelector('.' + x)){
+                    dado = document.createTextNode(climas[campo][x])
+                    a.appendChild(dado)
+                    /*console.log(climas[campo][x])
+                    document.querySelector('.' + x).value = climas[campo][x]*/
+                }
+
+            }
+        }
+        
+    }
+
+}
