@@ -28,9 +28,9 @@
 }
 
 .logo:hover::before {
-    top: -80px;
-    left: 50px;
+    top: -55px;
+    left: 40px;
     transition: 1s;
     color: #000;
-    filter: drop-shadow(-10px 20px 0px #FFC600) drop-shadow(-10px 20px 0px #E900FF) drop-shadow(-10px 20px 0px #5800FF);
+    filter: drop-shadow(-10px 15px 0px #FFC600) drop-shadow(-10px 15px 0px #E900FF) drop-shadow(-10px 15px 0px #5800FF);
 }

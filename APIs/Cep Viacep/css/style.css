@@ -21,12 +21,13 @@ body {
 }
 .grid{
     display: grid;
-    grid-template-columns:  1fr;
+    grid-template-columns: 1fr;
 }
 .gridItem{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-
+    padding-top: 12px;
 }
 
 label{

@@ -1,4 +1,4 @@
-function apiClima(){
+function clima(){
 
     const url = `https://apiprevmet3.inmet.gov.br/previsao/${geocode}`
 

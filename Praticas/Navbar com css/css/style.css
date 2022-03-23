@@ -47,12 +47,12 @@ nav ul li a:hover {
 @media (max-width: 575.98px) {
     nav {
         display: none;
-        width: auto;
+        width: 80px;
         position: fixed;
         top: 96px;
         right: 30px;
         padding: 15px;
-        border-radius: 10px;
+        border-radius: 0 0 10px 10px;
         background: #4a97d4;
     }
 

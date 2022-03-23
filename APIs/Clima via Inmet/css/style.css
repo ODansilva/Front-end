@@ -11,7 +11,7 @@ body {
     color: #464646;
     background: url(../img/ceu_nuvens.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
     z-index: 2;
 }
 
