@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Modal</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="center">
+            <button id="abrir" type="button">Abrir Modal</button>
+        </div>
+
+        <div id="modal" class="modal">
+            <h1>Modal modelo</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque ac felis vel finibus.
+                Curabitur laoreet lobortis accumsan. Duis at augue lobortis, ultricies justo at, elementum lectus.
+                Aliquam at lobortis ante, ut eleifend orci. Etiam ac magna posuere, fringilla orci et, congue dolor.
+                Nullam ac erat vitae libero maximus dignissim at quis ex. Nunc ac mi ultrices, faucibus sapien et,
+                imperdiet risus.
+            </p>
+        </div>
+
+    </div>
+
+    <script>
+        const abrirModal = document.querySelector('#abrir')
+        const modal = document.querySelector('#modal')
+
+        abrirModal.addEventListener('click', function () {
+            modal.classList.toggle('in')
+        })
+    </script>
+</body>
+
+</html>

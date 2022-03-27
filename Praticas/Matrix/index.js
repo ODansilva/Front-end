@@ -7,7 +7,7 @@ const ctx = tela.getContext('2d')
 tela.width = innerWidth
 tela.height = innerHeight
 
-const tFont = 10
+const tFont = 12
 let colunas = Math.floor(tela.width / tFont)
 
 const nuvem = new Array(colunas).fill(1)
@@ -28,17 +28,11 @@ function temporal() {
         let positionX = x * tFont 
         let positionY = nuvem[x] * tFont
 
-        if(positionY > tela.height / 2.2 && positionX >tela.width / 2.5 && positionX < tela.width / 1.6 ){
-            console.log('meio')
-            positionY += 10
-            
-        }
-
         ctx.fillText(gota, positionX, positionY)
 
         if (gota == codigo[x]) {
             ctx.fillStyle = "#FFF"
-            ctx.font = `60px Lato`
+            ctx.font = `60px lato`
             posicao = 60 * x
             ctx.fillText(codigo[x], tela.width / 2.5 + posicao, tela.height / 2)
 
@@ -48,7 +42,7 @@ function temporal() {
         
         nuvem[x]++
 
-        if(positionY > tela.height && Math.random() > 0.95) {
+        if(positionY > tela.height && Math.random() > 0.98) {
             nuvem[x] = 0
         }
     }

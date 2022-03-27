@@ -1,0 +1,19 @@
+* { 
+    padding: 0;
+    margin: 0;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+header {
+    width: 100%;
+    height: 330px;
+    background-image: linear-gradient(135deg, rgb(84, 171, 214) 0%, rgb(165, 109, 166) 50%, rgb(208, 91, 106) 100%);
+}
+nav {
+    height: 180px;
+    background: linear-gradient(180deg, rgba(0,0,0,0.76) 15%, rgba(0,0,0,0.192) 60%, rgba(0,0,0,8e-05) 100%);
+}

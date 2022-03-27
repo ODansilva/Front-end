@@ -26,6 +26,7 @@ label {
 }
 
 .logo-search{
+    cursor: pointer;
     display: block;
     position: absolute;
     top: 0;
@@ -40,6 +41,7 @@ label {
 }
 
 .clear {
+    cursor: pointer;
     display: block;
     position: absolute;
     top: 0;
@@ -62,7 +64,7 @@ label {
     outline: none;
     color: tomato;
     background-color: #fff;
-    filter: drop-shadow(5px 5px 20px rgb(185, 127, 61));
+    filter: drop-shadow(5px 5px 20px rgba(0,0,0, 0.2));
 }
 #search::placeholder{
     color: tomato

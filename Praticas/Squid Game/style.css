@@ -7,7 +7,9 @@
 body {
     background: #000;
 }
+
 .s_anima {
+    transition: 1s;
     animation-duration: 5s;
     --webkit-animation-duration: 5s;
     animation-iteration-count: infinite;
@@ -19,9 +21,9 @@ body {
     animation-iteration-count: infinite;
     --webkit-animation-iteration-count: infinite;
 }
-
 .g_anima {
     transition: 2s;
+    transform: scale(0.5);
     animation-duration: 6s;
     --webkit-animation-duration: 6s;
     animation-iteration-count: infinite;
@@ -46,13 +48,12 @@ audio {
     height: 200px;
 }
 
-
 #circle {
     width: 200px;
     height: 200px;
     background: url(./img/circle.svg) no-repeat center;
     position: absolute;
-    filter: drop-shadow(0 0 30px #fff);
+    filter: saturate(4) drop-shadow(0 0 30px rgba(255, 255, 255, 0.5));
     animation-name: circle;
 }
 #circle::after {
@@ -72,7 +73,7 @@ audio {
     height: 200px;
     background: url(./img/triangle.svg) no-repeat center;
     position: absolute;
-    filter: drop-shadow(0 0 30px #fff);
+    filter: saturate(4) drop-shadow(0 0 30px rgba(255, 255, 255, 0.5));
     animation-name: triangle;
 
 }
@@ -93,7 +94,7 @@ audio {
     height: 200px;
     background: url(./img/rectangle.svg) no-repeat center;
     position: absolute;
-    filter: drop-shadow(0 0 30px #fff);
+    filter: saturate(4) drop-shadow(0 0 30px rgba(255, 255, 255, 0.5));
     animation-name: quadrad;
 }
 #rectangle::after {

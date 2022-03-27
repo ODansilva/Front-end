@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center {
+    position: absolute;
+    top: 45%;
+}
+
+.modal {
+    visibility: hidden;
+}
+.in {
+    visibility: visible;
+    opacity: 0.8;
+}

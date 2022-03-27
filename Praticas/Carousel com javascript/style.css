@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+button {
+    background: none;
+    border: none;
+    opacity: 0.4;
+}
+button.left {
+    position: absolute;
+    align-self: center;
+    left: 10px;
+    z-index: 1;
+}
+button.right {
+    position: absolute;
+    align-self: center;
+    right: 10px;
+    z-index: 1;
+}
+button img {
+    width: 30px;
+}
+
+.slides {
+    position: absolute;
+    display: flex;
+    top: 20%;
+}
+.slide img {
+    width: 100%;
+}
+.slide {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    display: none;
+    justify-content: center;
+}
+.vis {
+    display: flex;
+}
+.slide img {
+    width: 100%;
+}
+.caption {
+    position: absolute;
+    top: 45%;
+}
