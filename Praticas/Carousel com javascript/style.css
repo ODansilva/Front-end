@@ -3,6 +3,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+body {
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    font-size: 15px;
+}
 .container {
     height: 100%;
     display: flex;
@@ -34,9 +38,7 @@ button img {
     display: flex;
     top: 20%;
 }
-.slide img {
-    width: 100%;
-}
+
 .slide {
     position: relative;
     width: 500px;
@@ -44,13 +46,38 @@ button img {
     display: none;
     justify-content: center;
 }
-.vis {
-    display: flex;
-}
 .slide img {
     width: 100%;
+}
+.vis {
+    display: flex;
 }
 .caption {
     position: absolute;
     top: 45%;
+    text-align: center;
+    animation-name: zoons;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+.caption h1 {
+    font-size: 2rem;
+    color: tomato;
+}
+.caption p {
+    font-size: 1.5rem;
+    color: dodgerblue;
+}
+
+@keyframes zoons {
+    0% {
+        transform: scale(0.97);
+    }
+    50% {
+        transform: scale(0.95);
+    }
+    100% {
+        transform: scale(0.93);
+    }
 }

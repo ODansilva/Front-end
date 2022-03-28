@@ -9,6 +9,10 @@ bRight.addEventListener("click", function(){
     carousel('right')
 })
 
+setInterval(() => {
+    carousel('right')
+}, 5000)
+
 let slideI = 0
 function carousel (direct) {
     const x = document.getElementsByClassName("slide");
