@@ -11,7 +11,7 @@ function cont() {
 
         const options= {
             method : 'GET',
-            mode: 'cors'
+            mode: 'no-cors'
         }
 
         fetch (url, options)
