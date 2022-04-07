@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formas</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body onload="bloco()">
+
+    <div class="container">
+
+    </div>
+    <script>
+        bloco = () => {
+            let container = document.querySelector('.container')
+            for(let x = 0; x <= 400; x++){
+                let bloco = document.createElement('div')
+                bloco.classList.add('lozango')
+                container.appendChild(bloco)
+            }
+        }
+    </script>
+</body>
+</html>

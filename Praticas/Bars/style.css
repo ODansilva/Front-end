@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin:0;
+    font: 15px "Lato", Arial, sans-serif;
+}
+
+body{
+    min-width: 500px;
+}
+
+header{
+    padding: 30px;
+    display: flex;
+    align-items: center;
+}
+.topo{
+    width: 30vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+    margin: 0 auto;
+    border-radius: 15px;
+    background: rgb(94, 163, 55);
+}
+
+.navicon {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.line {
+    position: absolute;
+    top: 23px;
+    visibility: visible;
+    width: 30px;
+    height: 4px;
+    background-color: red;
+}
+.lhide {
+    visibility: hidden;
+}
+
+.linex1 {
+    display: flex;
+    width: 30px;
+    height: 4px;
+    position: absolute;
+    top: 10px;
+    background-color: red;
+    transition: 1s;
+}
+.linex1a {
+    width: 40px;
+    top: 23px;
+    transform: rotateZ(45deg);
+    background-color: #fff;
+}
+
+.linex2{
+    display: flex;
+    width: 30px;
+    height: 4px;
+    position: absolute;
+    bottom: 10px;
+    background-color: red;
+    transition: 1s;
+}
+.linex2a {
+    width: 40px;
+    bottom: 23px;
+    transform: rotateZ(-45deg);
+    background-color: #fff;
+}
+

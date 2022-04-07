@@ -1,36 +1,21 @@
-let contacao = 1
-function cont() {
+let cotacao = 1
+console.log(cotacao)
 
-    let par1 = document.querySelector('.par1').value
-    let par2 = document.querySelector('.par2').value
-    let paridade = par1+par2
+function cot() {
+    let pares = document.querySelector('.pares').value
 
-    if(par1 !== par2) {
+    const url = `https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoMoedaDia(moeda=@moeda,dataCotacao=@dataCotacao)?@moeda='${pares}'&@dataCotacao='${data}'&$top=100&$format=json&$select=cotacaoCompra`
 
-        const url = `http://economia.awesomeapi.com.br/json/last/${par1}-${par2}`
 
-        const options= {
-            method : 'GET',
-            mode: 'no-cors'
-        }
-
-        fetch (url, options)
-            .then(resp => {resp.json()
-                .then(dados => listagem(dados,paridade))
-            })
-
-    }else {
-        contacao = 1
-        return contacao
-    }
-
+    fetch (url)
+        .then(resp => {resp.json()
+            .then(dados => listagem(dados))
+        })
 }
 
-function listagem(dados,paridade) {
-    for(const campo in dados[paridade]){
-        contacao = dados[paridade]['bid']
-        return contacao
-    }
+function listagem(dados) {
+    let cota = dados.value[0]['cotacaoCompra']
+    cotacao = cota.toFixed(2)
 }
 
 convert = m => {
@@ -40,9 +25,27 @@ convert = m => {
     if ( !(isNaN(moeda1 || moeda2)) ){
 
         if (m === 'm1'){
-            document.querySelector('#moeda2').value = moeda1 * contacao
+            document.querySelector('#moeda2').value = moeda1 * cotacao
         }if (m === 'm2'){
-            document.querySelector('#moeda1').value = moeda2 / contacao
+            document.querySelector('#moeda1').value = (moeda2 / cotacao).toFixed(2)
         }
     }
 }
+
+function dataHoje() {
+    let data = new Date()
+    let dia, mes, ano
+    dia = data.getDate()
+    if (dia < 10){
+        dia = '0' + dia
+    }
+    mes = data.getMonth() + 1
+    if (mes < 10){
+        mes = '0' + mes
+    }
+    ano = data.getFullYear()
+    newData = (`${mes}/${dia}/${ano}`)
+   return newData
+}
+let data = dataHoje()
+console.log(data)

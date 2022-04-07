@@ -33,7 +33,7 @@ select {
 select:focus{
     outline: none;
 }
-.par1, .par2 {
+.pares, .real {
     width: 80px;
     height: 50px;
 }

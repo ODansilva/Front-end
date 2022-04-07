@@ -9,18 +9,20 @@
     <link rel="stylesheet" href="css/style.css">
 
 </head>
-<body onload="options()">
+<body onload="options(), cot()">
 
     <div class="moedas">
         <div>
-            <select onchange="cont()" class="par1"></select>
+            <select onchange="cot()" class="pares"></select>
             <input oninput="convert('m1')" id="moeda1" type="text" placeholder="Valor">
         </div>
 
         <span class="equal">=</span>
 
         <div>
-            <select onchange="cont()" class="par2"></select>
+            <select class="real">
+                <option value="BRL">BRL - Real Brasileiro</option>
+            </select>
             <input oninput="convert('m2')" id="moeda2"type="text" placeholder="Valor">
         </div>   
     </div>
